@@ -1,2 +1,8 @@
 flask==3.0.3
 flask-cors==5.0.0
+tensorflow==2.16.1
+numpy==1.26.0
+scipy==1.14.1
+scikit-learn==1.5.2
+matplotlib==3.9.2
+ml-collections==0.1.1

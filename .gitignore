@@ -1,0 +1,14 @@
+# Ignore macOS system files
+.DS_Store
+../.DS_Store
+
+
+# Ignore virtual environment directory
+bioacc/
+
+# Ignore uploads directory (if you want to ignore uploaded files)
+uploads/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
