@@ -62,3 +62,41 @@ def read_embedding_info(config_path="data/output/embedding_config.json"):
 
 if __name__ == "__main__":
     read_embedding_info()
+
+
+
+
+# # Define classes
+# curl -X POST http://localhost:5000/api/classes \
+#   -H "Content-Type: application/json" \
+#   -d '{"classes": ["wood thrush", "unknown"]}'
+
+# # Get current classes
+# curl http://localhost:5000/api/classes
+
+
+# Upload file and generate embedding
+# curl -X POST http://localhost:5000/api/upload \
+#   -F "file=@/path/to/your/audio.wav"
+
+
+# Search for similar audio files
+# curl -X POST http://localhost:5000/api/search \
+#   -H "Content-Type: application/json" \
+#   -d '{"filename": "query_audio.wav"}'
+
+
+# Play audio file (in browser or curl)
+# curl http://localhost:5000/api/audio/example.wav
+
+# # Add label to audio file
+# curl -X POST http://localhost:5000/api/label \
+#   -H "Content-Type: application/json" \
+#   -d '{
+#     "filename": "example.wav",
+#     "label": "wood thrush",
+#     "confidence": 0.95
+#   }'
+
+# # Get labels for a file
+# curl http://localhost:5000/api/labels?filename=example.wav
